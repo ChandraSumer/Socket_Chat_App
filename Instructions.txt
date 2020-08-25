@@ -1,0 +1,37 @@
+Make a client server text chat application. Multiple users should be able to chat concurrently. No need to have multiple groups. Just one big chat room
+
+
+
+This will give you experience in coding tcp IP internals.
+
+
+
+Read up about Socket Programming as well as multithreading using unix fork command
+
+
+
+Try out Netcat... it's a old command line tool written in C that works both as the client as well as server. Only thing is netcat when in server mode can accept only one client for say chatting
+
+
+
+One client at a time I mean.
+
+
+
+Your server should support multiple clients.
+
+
+
+Will give you good exposure to multithreading if you use pthread_create() instead of fork() at server side to accept multiple clients. Fork() creates new child processes to accept more clients
+
+
+
+Pthread creates new threads to do the same.
+
+
+
+So in sum... you will learn processes, threads and networking.
+
+
+
+If you want to go a step further.... handle client requests asynchronously using "event handlers" at server side. Its a vitally important CS core concept.
